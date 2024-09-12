@@ -49,7 +49,7 @@ const Navbar = () => {
       <div className="flex justify-between items-center px-8 ml-8">
         {/* Logo or Title */}
         <h1 className="text-2xl font-bold tracking-wide hover:text-blue-500 transition duration-200">
-          <Link to="/">Project Management</Link>
+          <Link to="/">WorkGrid</Link>
         </h1>
 
         {/* Navigation Links */}
