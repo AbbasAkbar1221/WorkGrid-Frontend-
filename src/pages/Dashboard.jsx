@@ -31,7 +31,8 @@ const Dashboard = () => {
         return;
       }
 
-      const response = await fetch("http://localhost:3006/task/tasks", {
+      const response = await fetch("https://workgrid-backend.onrender.com/task/tasks", {
+      // const response = await fetch("http://localhost:3006/task/tasks", {
         method: "GET",
         credentials: "include",
         headers: {

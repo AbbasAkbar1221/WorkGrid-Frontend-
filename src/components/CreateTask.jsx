@@ -29,7 +29,8 @@ const CreateTask = ({ onClose }) => {
     };
 
     try {
-      const response = await fetch("http://localhost:3006/task/create", {
+      const response = await fetch("https://workgrid-backend.onrender.com/task/create", {
+      // const response = await fetch("http://localhost:3006/task/create", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -55,7 +56,8 @@ const CreateTask = ({ onClose }) => {
   // function to get all users from database
   const getUsers = async () => {
     try {
-      const response = await fetch("http://localhost:3006/auth/users", {
+      const response = await fetch("https://workgrid-backend.onrender.com/auth/users", {
+      // const response = await fetch("http://localhost:3006/auth/users", {
         method: "GET",
         credentials: "include",
         headers: {

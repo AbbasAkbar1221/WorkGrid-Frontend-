@@ -33,7 +33,8 @@ const Users = () => {
   const fetchUsers = async () => {
     setLoading(true);
     try {
-      const response = await fetch("http://localhost:3006/auth/users", {
+      const response = await fetch("https://workgrid-backend.onrender.com/auth/users", {
+      // const response = await fetch("http://localhost:3006/auth/users", {
         method: "GET",
         headers: {
           "Content-Type": "application/json",
@@ -76,7 +77,8 @@ const Users = () => {
   const handleOkAdd = async () => {
     try {
       const values = await form.validateFields();
-      const response = await fetch("http://localhost:3006/auth/register", {
+      const response = await fetch("https://workgrid-backend.onrender.com/auth/register", {
+      // const response = await fetch("http://localhost:3006/auth/register", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -100,7 +102,7 @@ const Users = () => {
     try {
       const values = await form.validateFields();
       const response = await fetch(
-        `http://localhost:3006/auth/users/${currentUser._id}`,
+        `https://workgrid-backend.onrender.com/auth/users/${currentUser._id}`,
         {
           method: "PUT",
           headers: {
@@ -133,7 +135,7 @@ const Users = () => {
   const handleDelete = async (userId) => {
     try {
       const response = await fetch(
-        `http://localhost:3006/auth/users/${userId}`,
+        `https://workgrid-backend.onrender.com/auth/users/${userId}`,
         {
           method: "DELETE",
           headers: {

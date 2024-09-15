@@ -56,7 +56,8 @@ const Profile = () => {
           }
 
           const response = await fetch(
-            `http://localhost:3006/auth/users/${userId}`,
+            `https://workgrid-backend.onrender.com/auth/users/${userId}`,
+            // `http://localhost:3006/auth/users/${userId}`,
             {
               method: "GET",
               headers: {

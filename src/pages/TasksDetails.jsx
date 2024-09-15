@@ -39,7 +39,8 @@ const TaskDetails = () => {
     const fetchTaskDetails = async () => {
       setLoading(true); // Start loading
       try {
-        const response = await fetch(`http://localhost:3006/task/task/${id}`, {
+        const response = await fetch(`https://workgrid-backend.onrender.com/task/task/${id}`, {
+        // const response = await fetch(`http://localhost:3006/task/task/${id}`, {
           method: "GET",
           credentials: "include",
           headers: {
@@ -56,7 +57,8 @@ const TaskDetails = () => {
 
         // Fetch subtasks
         const subtaskResponse = await fetch(
-          `http://localhost:3006/task/task/${id}/subtasks`,
+          `https://workgrid-backend.onrender.com/task/task/${id}/subtasks`,
+          // `http://localhost:3006/task/task/${id}/subtasks`,
           {
             method: "GET",
             credentials: "include",
@@ -92,7 +94,8 @@ const TaskDetails = () => {
     e.preventDefault();
     try {
       const response = await fetch(
-        `http://localhost:3006/task/task/${id}/add-activity`,
+        `https://workgrid-backend.onrender.com/task/task/${id}/add-activity`,
+        // `http://localhost:3006/task/task/${id}/add-activity`,
         {
           method: "POST",
           credentials: "include",
@@ -108,7 +111,8 @@ const TaskDetails = () => {
       }
 
       const updatedResponse = await fetch(
-        `http://localhost:3006/task/task/${id}`,
+        `https://workgrid-backend.onrender.com/task/task/${id}`,
+        // `http://localhost:3006/task/task/${id}`,
         {
           method: "GET",
           credentials: "include",
@@ -141,7 +145,8 @@ const TaskDetails = () => {
     try {
       // console.log("new subtask is,",newSubtask);
       const response = await fetch(
-        `http://localhost:3006/task/task/${id}/subtasks`,
+        `https://workgrid-backend.onrender.com/task/task/${id}/subtasks`,
+        // `http://localhost:3006/task/task/${id}/subtasks`,
         {
           method: "POST",
           credentials: "include",
@@ -169,7 +174,8 @@ const TaskDetails = () => {
   const handleUpdateSubtask = async (subtaskId) => {
     try {
       const response = await fetch(
-        `http://localhost:3006/task/task/${id}/subtasks/${subtaskId}`,
+        `https://workgrid-backend.onrender.com/task/task/${id}/subtasks/${subtaskId}`,
+        // `http://localhost:3006/task/task/${id}/subtasks/${subtaskId}`,
         {
           method: "PUT",
           credentials: "include",
