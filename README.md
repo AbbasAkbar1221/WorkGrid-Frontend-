@@ -124,8 +124,8 @@ https://github.com/user-attachments/assets/6e8f162a-4647-47ea-922d-fab6a8281294
 
 **Project Maintainer's:**
 
-- 👤 **Abbas Akbar, Ali Sher Khan, Abhishek Bansal**
-- 🔗 GitHub: [github.com/abbasakbar](https://github.com/abbasakbar1221),[github.com/alisherkhan](https://github.com/Alisherkhan032),[github.com/abhishekbansal](https://github.com/abhishekbansal2312)
+- 👤 **Abbas Akbar, Ali Sher Khan, Prakriti Gupta, Ananya Lamba**
+- 🔗 GitHub: [github.com/abbasakbar](https://github.com/abbasakbar1221),[github.com/alisherkhan](https://github.com/Alisherkhan032),[github.com/prakritigupta](https://github.com/Prakritig01),[github.com/ananyalamba](https://github.com/AnanyaLamba)
 
 
 
