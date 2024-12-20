@@ -12,9 +12,15 @@ const ProtectedRoute = ({ children }) => {
 
   const isAuthenticated = Boolean(token); // Use Boolean to handle empty string and null
   console.log("isAuthenticated", isAuthenticated);
+
+  if (!token) {
+    console.error("Token is undefined. Ensure it is being set correctly.");
+  }
+  
   
   if (!isAuthenticated) {
     // If not authenticated, redirect to login page
+    console.warn("User not authenticated. Redirecting to login.");
     return <Navigate to="/login" replace />;
   }
 
