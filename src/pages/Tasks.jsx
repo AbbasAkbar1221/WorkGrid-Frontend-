@@ -45,8 +45,8 @@ const Tasks = () => {
     const fetchTasks = async () => {
       setLoading(true);
       try {
-        const response = await fetch("https://workgrid-backend.onrender.com/task/tasks", {
-        // const response = await fetch("http://localhost:3006/task/tasks", {
+        // const response = await fetch("https://workgrid-backend.onrender.com/task/tasks", {
+        const response = await fetch("http://localhost:3006/task/tasks", {
           method: "GET",
           credentials: "include",
           headers: {
@@ -91,8 +91,8 @@ const Tasks = () => {
   const handleDeleteTask = async (taskId) => {
     try {
       const response = await fetch(
-        `https://workgrid-backend.onrender.com/task/delete/${taskId}`,
-        // `http://localhost:3006/task/delete/${taskId}`,
+        // `https://workgrid-backend.onrender.com/task/delete/${taskId}`,
+        `http://localhost:3006/task/delete/${taskId}`,
         {
           method: "DELETE",
           credentials: "include",
